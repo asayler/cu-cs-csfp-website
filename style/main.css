@@ -16,17 +16,17 @@ a:link{
     color: SteelBlue;
 }
 
-a:visited{
+a:link:visited{
     color: DarkSlateBlue;
 }
 
-a:hover, a:focus{
+a:link:hover, a:link:focus{
     text-decoration: underline;
-    color: LightSlateBlue
+    color: LightSlateBlue;
 }
 
-a:active{
-    color: Black
+a:link:active{
+    color: Black;
 }
 
 .center{
@@ -70,6 +70,7 @@ ul{
 
 ul li{
     padding-left: 0.8em;
+    text-indent: -1em;
 }
 
 ul.plain{
