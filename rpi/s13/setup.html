@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>RPi Setup</title>
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+  </head>
+
+  <body>
+
+    <?php include_once($_SERVER['DOCUMENT_ROOT'].'/include/analyticstracking.html'); ?>
+
+    <section id="pagecontent">
+
+      <h1>Setting Up Your Raspberry Pi</h1>
+
+      <p>
+	This page contains instructions for setting up and configuring
+	your Raspberry Pi in the context of the <a href="/">CU
+	CSFP</a> <a href="/rpi/">RPi Project</a>. These instructions
+	will be covered the first RPi project class. In addition, the
+	Raspberry Pi Foundation also provides an illustrated
+	<a href="http://www.raspberrypi.org/wp-content/uploads/2012/12/quick-start-guide-v1.1.pdf"
+	target="_blank">"Getting Started"</a> guide. The
+	<a href="http://elinux.org/RPi_Community"
+	target="_blank">elinux.org RPi Wiki</a> is also a good general
+	reference source.
+      </p>
+
+      <h2>Step 1: SD Card Setup</h2>
+
+      <p>
+	The first step to setting up the RPi is installing an
+	operating system image to the RPi's SD card. We will be using
+	the <a href="http://www.raspbian.org/"
+	target="_blank">Raspbain</a> OS for this course. This OS is
+	a <a href="http://www.debian.org/" target="_blank">Debian
+	Linux</a> derivative and is the official recommended OS for
+	the RPi.
+      </p>
+
+      <p>
+	First, download the latest Raspbain
+	image: <a href="http://www.raspberrypi.org/downloads"
+	target="_blank">http://www.raspberrypi.org/downloads</a>.
+      </p>
+
+      <p>
+	Next, follow the directions to copy the Raspbain image to your
+	SD card:
+	<a href="http://elinux.org/RPi_Easy_SD_Card_Setup"
+	target="_blank">http://elinux.org/RPi_Easy_SD_Card_Setup</a>.
+      </p>
+
+      <h2>Step 2: Initial Boot</h2>
+
+      <p>
+	Insert the SD Card into your RPi, connect all peripherals, and
+	finally, connect the SUB power cable to boot the RPi. You
+	should be presented with the initial configuration
+	'raspi-config' screen. If not, you may run 'raspi-config'
+	manually.
+      </p>
+
+    </section>
+
+  </body>
+</html>
