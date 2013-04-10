@@ -71,7 +71,7 @@
       <ul>
 	<li>Grow SD Partition</li>
 	<li>Set Langauge, Keyboard, and Local</li>
-	<li>Set GPU/CPU Memoery Split</li>
+	<li>Set GPU/CPU Memory Split</li>
 	<li>Change Password</li>
 	<li>Enable SSH</li>
 	<li>Set Boot Options</li>
@@ -80,25 +80,64 @@
       <h2>Step 3: Setup Network</h2>
 
       <p>
-	Configure the wifi and/or Ethernet network
+	Configure the wifi and/or Ethernet network (either via GUI or
+	CLI)
       </p>
 
       <h2>Step 4: Update OS and Software</h2>
 
       <p>
-	Via apt
+	Via apt:
+      </p>
+
+      <p>
+	'sudo apt-get update'
+	<br />
+	'sudo apt-get dist-upgrade'
       </p>
       
       <h2>Step 5: Boot Desktop Environment</h2>
 
       <p>
-	Just for clicks
+	Just for clicks...
+      </p>
+
+      <p>
+	'startx'
       </p>
 
       <h2>Step 6: Test SSH</h2>
 
       <p>
 	Find IP Address and Login via SSH
+      </p>
+
+      <p>
+	On RPI:
+      </p>
+      
+      <p>
+	'ifconfig' (look for either eth0 or wlan0 IP address)
+      </p>
+
+      <p>
+	On another machine (must be on same network as RPi):
+      </p>
+
+      <p>
+	'ssh USER@IP' (Linix and OSX)
+      </p>
+
+      <p>
+	Windows user should
+	use <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/"
+	target="_blank">Putty</a>.
+      </p>
+
+      <h2>Step 7: Shutdown</h2>
+
+      <p>
+	'sudo shutdown -h now'
       </p>
 
     </section>
