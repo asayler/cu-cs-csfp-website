@@ -28,7 +28,32 @@
 	reference source.
       </p>
 
+      <p>A playlist of video segments of this session is
+	  <a href="http://www.youtube.com/playlist?list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	  target="_blank">available on YouTube</a></p>
+
+      <h2>Step 0: Raspberry Pi Overview</h2>
+
+      <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=rgENyiqKQOY&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 01: Overview"</a>
+	video segment on YouTube.</em>
+      </p>
+
+      <p>
+	You may want to start by viewing
+	the <a href="./CU-S13-RPi-Intro.pdf">overview slides</a>.
+      </p>
+
       <h2>Step 1: SD Card Setup</h2>
+
+      <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=FcCzXRWNX3A&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 02: SD Card
+	Setup"</a> video segment on YouTube.</em>
+      </p>
 
       <p>
 	The first step to setting up the RPi is installing an
@@ -53,12 +78,34 @@
 	target="_blank">http://elinux.org/RPi_Easy_SD_Card_Setup</a>.
       </p>
 
-      <h2>Step 2: Initial Boot</h2>
+      <h2>Step 2: Connecting the Pi</h2>
 
       <p>
-	Insert the SD Card into your RPi, connect all peripherals, and
-	finally, connect the SUB power cable to boot the RPi. You
-	should be presented with the initial configuration
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=5Mld4F0T5GE&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 03: Connecting the
+	RPi"</a> video segment on YouTube.</em>
+      </p>
+
+      <p>
+	Connect the pi to the keyboard, video, and monitor. Insert the
+	prepared SD card and USB WiFi adapter (if present). Do not
+	connect the micro-USB power cable until everything else is
+	connected and you are ready to boot.
+      </p>
+
+      <h2>Step 3: Initial Boot</h2>
+
+      <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=PHDG43S0r5E&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp&index=4"
+	target="_blank">"Setup and Config - Part 04: First Boot"</a>
+	video segment on YouTube.</em>
+      </p>
+
+      <p>
+	Connect the USB power cable to boot the RPi. You should be
+	presented with the initial blue-background configuration
 	'raspi-config' screen. If not, you may run 'raspi-config'
 	manually.
       </p>
@@ -71,20 +118,20 @@
       <ul>
 	<li>Grow SD Partition (expand_rootfs)</li>
 	<li>Configure Keyboard: 'Generic 104-key PC' -> Other -> English
-	(US) -> Default -> Deafult -> Yes </li>
+	(US) -> Default -> Default -> Yes </li>
 	<li>Change Password: YOU PICK</li>
-	<li>Change Locale: en_US.UTF-8 (select via Spacebar) -> Set Default to en_US.UTF-8</li>
+	<li>Change Locale: en_US.UTF-8 (select via Space-bar) -> Set Default to en_US.UTF-8</li>
 	<li>Change Timezone: America -> Denver</li>
 	<li>Set GPU/CPU Memory Split: 64 MB for GPU</li>
 	<li>Set SSH: Enable</li>
 	<li>Boot to Desktop: No</li>
       </ul>
 
-      <h2>Step 3: Setup Network</h2>
-
       <p>
-	Configure the wifi and/or Ethernet network (either via GUI or
-	CLI)
+	Finally, reboot to complete the initial setup. The system
+	should come back up to a CLI log-in prompt. The default user it
+	'pi' and the default password is 'raspberry' (unless you
+	changed it as mentioned above).
       </p>
 
       <h2>Step 4: Update OS and Software</h2>
@@ -102,6 +149,13 @@
       <h2>Step 5: Boot Desktop Environment</h2>
 
       <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=d1oDLYYsGqk&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 05: The Desktop"</a>
+	video segment on YouTube.</em>
+      </p>
+
+      <p>
 	Just for clicks...
       </p>
 
@@ -109,10 +163,31 @@
 	'startx'
       </p>
 
-      <h2>Step 6: Test SSH</h2>
+      <h2>Step 6: Setup Network</h2>
 
       <p>
-	Find IP Address and Login via SSH
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=d1oDLYYsGqk&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 05: The Desktop"</a>
+	video segment on YouTube.</em>
+      </p>
+
+      <p>
+	Configure the wifi and/or Ethernet network (either via GUI or
+	CLI)
+      </p>
+
+      <h2>Step 7: Test SSH</h2>
+
+      <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=d1oDLYYsGqk&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 05: The Desktop"</a>
+	video segment on YouTube.</em>
+      </p>
+
+      <p>
+	Find IP Address and Log-in via SSH
       </p>
 
       <p>
@@ -128,7 +203,7 @@
       </p>
 
       <p>
-	'ssh USER@IP' (Linix and OSX)
+	'ssh USER@IP' (Linux and OSX)
       </p>
 
       <p>
@@ -137,7 +212,14 @@
 	target="_blank">Putty</a>.
       </p>
 
-      <h2>Step 7: Shutdown</h2>
+      <h2>Step 8: Shutdown</h2>
+
+      <p>
+	<em>This step is covered in
+	the <a href="http://www.youtube.com/watch?v=d1oDLYYsGqk&feature=share&list=PLhuwta88NV1Ckgp9T1YF2m0I4iqLuaVDp"
+	target="_blank">"Setup and Config - Part 05: The Desktop"</a>
+	video segment on YouTube.</em>
+      </p>
 
       <p>
 	'sudo shutdown -h now'
