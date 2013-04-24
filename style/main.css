@@ -81,6 +81,10 @@ ul.plain li{
     list-style: none;
 }
 
+code{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
 body{
     width: 955px;
     height: auto;

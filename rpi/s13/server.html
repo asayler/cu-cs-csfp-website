@@ -43,12 +43,60 @@
 	GitHub account if they do not already have one.
       </p>
 
+      <h2>Network Setup</h2>
+
+      <p>
+	Before we can use our RPi as a server, we need to give it a
+	permanent location on our network. Normally, when you
+	connected your Pi to a network, it uses the Dynamic Host
+	Configuration Protocol (DHCP) to automatically obtain an IP
+	address and related network information. This address may
+	change every time we reboot the Pi or reconnect to the
+	network. A server, however, must have a constant IP address so
+	that we can always connect to it on the network.
+      </p>
+
+      <p>
+	To setup a static IP, we'll use the traditional file-based
+	Linux network configuration systems. On Debian-derived Linux
+	distributions, the network settings are set via the
+	'/etc/network/interfaces'. Open this file as root ('sudo') in
+	a text editor of your choice (emacs, vim, etc) and make the
+	following changes (we assume you are using the USB wifi
+	adapter to connect to the network and that it is currently
+	connected):
+      </p>
+
+      <pre>
+	<code>
+	  auto lo
+	  iface lo inet loopback
+	  
+	  auto eth0
+	  iface eth0 inet dhcp
+	
+	  auto wlan0
+	  allow-hotplug wlan0	
+	  iface wlan0 inet static
+	      wpa-ssid YOUR_WLAN_SSID
+              wpa-psk  YOUR_WLAN_PASSWORD
+              address  YOUR_STATIC_IP
+              netmask  YOUR_NETWORK_MASK
+              gateway  YOUR_GATEWAY
+              dns-nameservers 8.8.8.8 8.8.4.4
+
+	  #iface wlan0 inet manual
+	  #    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+	  #iface default inet dhcp
+	</code>
+      </pre>
+
       <h2>Apache HTTP Server</h2>
 
       <p>
 	The <a href="http://httpd.apache.org/" target="_blank">Apache
 	HTTP Server</a> is one of the most popular HTTP servers on the
-	Internet. You can use Apache to server static web pages, dynamic
+	Internet. You can use Apache to serve static web pages, dynamic
 	web applications, files, and much more.
       </p>
 
