@@ -81,6 +81,13 @@ ul.plain li{
     list-style: none;
 }
 
+pre{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 code{
     font-family: "Lucida Console", Monaco, monospace;
 }

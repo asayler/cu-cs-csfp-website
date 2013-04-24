@@ -57,6 +57,18 @@
       </p>
 
       <p>
+	Before we start reconfiguring the network, it's best to shut
+	down our network connection. This will minimize the likelihood
+	of conflicts between the new and old configuration. You can
+	shutdown the network connection (assuming your are using a USB
+	wifi adapter) by running the following command:
+      </p>
+
+      <pre><code>
+	  sudo ifdown wlan0
+      </code></pre>
+
+      <p>
 	To setup a static IP, we'll use the traditional file-based
 	Linux network configuration systems. On Debian-derived Linux
 	distributions, the network settings are set via the
@@ -67,8 +79,7 @@
 	connected):
       </p>
 
-      <pre>
-	<code>
+      <pre><code>
 	  auto lo
 	  iface lo inet loopback
 	  
@@ -88,6 +99,27 @@
 	  #iface wlan0 inet manual
 	  #    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 	  #iface default inet dhcp
+      </code></pre>
+
+      <p>
+	You will also likely need to update your '/etc/resolv.conf'
+	file if you wish to properly resolve DNS queries:
+      </p>
+
+      <pre><code>
+	  nameserver 8.8.8.8
+	  nameserver 8.8.4.4
+      </code></pre>
+
+      <p>
+	Finally, we can bring the network back up (if this command
+	generates errors or does not work, confirm that the
+	configuration is correct and/or try restarting your Pi):
+      </p>
+
+      <pre>
+	<code>
+	  sudo ifup wlan0
 	</code>
       </pre>
 
@@ -111,10 +143,10 @@
 	install Apache on the Pi:
       </p>
       
-      <p>
-	'sudo apt-get update'<br />
-	'sudo apt-get install apache2'
-      </p>
+      <pre><code>
+	sudo apt-get update
+	sudo apt-get install apache2
+      </code></pre>
 
     </section>
 
