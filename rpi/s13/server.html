@@ -21,6 +21,12 @@
 	CSFP RPi Project</a>.
       </p>
 
+      <p>
+	A playlist of video segments of this session is
+	<a href="http://www.youtube.com/playlist?list=PLhuwta88NV1DgyU0xbfhUJjE6134WJDzZ"
+	   target="_blank">available on YouTube</a>
+      </p>
+
       <h2>Prerequisites</h2>
 
       <p>
@@ -36,13 +42,6 @@
 	target="_blank">normal means</a>.
       </p>
 
-      <p>
-	We will also be using <a href="https://www.github.com"
-	target="_blank">GitHub</a> to distribute and save code for
-	this project. Students are encouraged to sign up for a free
-	GitHub account if they do not already have one.
-      </p>
-
       <h2>Network Setup</h2>
 
       <p>
@@ -54,6 +53,17 @@
 	change every time we reboot the Pi or reconnect to the
 	network. A server, however, must have a constant IP address so
 	that we can always connect to it on the network.
+      </p>
+
+      <h3>Linux Network Configuration</h3>
+      
+      <p>
+	<em>
+	  This step is covered in
+	  the <a href="http://www.youtube.com/watch?v=ZZxtO70XRpM&feature=share&list=PLhuwta88NV1DgyU0xbfhUJjE6134WJDzZ"
+	  target="_blank">"Web Server - Part 2: Network Setup"</a>
+	  video segment on YouTube.
+	</em>
       </p>
 
       <p>
@@ -117,11 +127,41 @@
 	configuration is correct and/or try restarting your Pi):
       </p>
 
-      <pre>
-	<code>
+      <pre><code>
 	  sudo ifup wlan0
-	</code>
-      </pre>
+      </code></pre>
+
+      <h3>Network Testing</h3>
+
+      <p>
+	<em>
+	  This step is covered in
+	  the
+	  <a href="http://www.youtube.com/watch?v=cykQAEbtoyI&feature=share&list=PLhuwta88NV1DgyU0xbfhUJjE6134WJDzZ"
+	  target="_blank">"Web Server - Part 03: Network Testing"</a>
+	  video segment on YouTube.
+	</em>
+      </p>
+
+      <p>
+	You may find the following commands helpful when confirming
+	network functionality:
+      </p>
+
+      <ul>
+	<li>
+	  <strong>ifconfig</strong> - Display network status
+	</li>
+	<li>
+	  <strong>route</strong> - Display routing table and gateway
+	</li>
+	<li>
+	  <strong>ping</strong> - Test connection to another host
+	</li>
+	<li>
+	  <strong>nslookup</strong> - Test DNS lookups and resolution
+	</li>
+      </ul>
 
       <h2>Apache HTTP Server</h2>
 
@@ -133,6 +173,16 @@
       </p>
 
       <h3>Install Apache</h3>
+
+      <p>
+	<em>
+	  This step is covered in
+	  the
+	  <a href="http://www.youtube.com/watch?v=53V_Ghv5uOo&feature=share&list=PLhuwta88NV1DgyU0xbfhUJjE6134WJDzZ"
+	  target="_blank">"Web Server - Part 04: Installing
+	  Apache"</a> video segment on YouTube.
+	</em>
+      </p>
       
       <p>
 	We will start by installing Apache on our Raspberry Pi. Apache
@@ -147,6 +197,26 @@
 	sudo apt-get update
 	sudo apt-get install apache2
       </code></pre>
+
+      <h3>Configure and Use Apache</h3>
+
+      <p>
+	<em>
+	  This step is covered in
+	  the
+	  <a href="http://www.youtube.com/watch?v=xkEQTiaLUKQ&feature=share&list=PLhuwta88NV1DgyU0xbfhUJjE6134WJDzZ"
+	  target="_blank">"Web Server - Part 05: Using Apache"</a>
+	  video segment on YouTube.
+	</em>
+      </p>
+
+      <p>
+	Now that Apache is installed, we can configure and use it. The
+	Apache configuration files are located in the "/etc/apache2/"
+	directory on Debian-like Linux systems. By default, Apache
+	server the files in the "/var/www/" directory on Debian-like
+	Linux systems.
+      </p>
 
     </section>
 
