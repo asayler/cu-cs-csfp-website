@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>RPi Web App</title>
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+  </head>
+
+  <body>
+
+    <?php include_once($_SERVER['DOCUMENT_ROOT'].'/include/analyticstracking.html'); ?>
+
+    <section id="pagecontent">
+
+      <h1>A Raspberry Pi Web App</h1>
+
+      <p>
+	This page contains instructions for programming and hosting a
+	small web app on your Raspberry Pi in the context of
+	the <a href="/rpi/">CU CSFP RPi Project</a>. This page builds
+	on the previous two classes: <a href="prog1.html">Programming
+	on the RPi</a> and <a href="server.html">Setting up the RPi as
+	a Server</a>.
+      </p>
+
+      <h2>Prerequisites</h2>
+
+      <p>
+	We will be starting with the the Raspbain OS configured as we
+	left it at the end of the <a href="./server.html">third
+	class</a>. If you are using your own RPi or SD Card, you may
+	download
+	a <a href="/files/2013-04-30_cu-csfp-rpi-raspbian.zip">fresh
+	version</a>
+	(<a href="/files/2013-04-30_cu-csfp-rpi-raspbian.zip.sha1">sha1</a>)
+	of this configuration and flash it via
+	the <a href="http://elinux.org/RPi_Easy_SD_Card_Setup"
+	target="_blank">normal means</a>. You will need to manually
+	configure the network as discussed in
+	the <a href="server.html">previous class</a>, but Apache has
+	already been installed for you.
+      </p>
+
+      <h2>Code</h2>
+
+      <p>
+	The code is available on GitHub via
+	the <a href="https://github.com/asayler/TwitterAlarmClock"
+	target="_blank">TwitterAlarmClock repository</a>. See the
+	'web-cgi' branch.
+      </p>
+
+    </section>
+
+  </body>
+</html>
