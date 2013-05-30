@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>CU CS VM Install</title>
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+  </head>
+
+  <body>
+
+    <?php include_once($_SERVER['DOCUMENT_ROOT'].'/include/analyticstracking.html'); ?>
+
+    <section id="pagecontent">
+
+      <h1>Installing the VM</h1>
+            
+      <p>
+	The CU CS Virtual Machine image is designed to run
+	with <a href="https://www.virtualbox.org/">Oracle
+	VirtualBox</a>. VirtualBox can be used on Windows, Linux, or
+	OSX (Apple) systems. The VM itself
+	runs <a href="http://www.ubuntu.com/">Ubuntu 12.04
+	GNU/Linux</a>. These directions will take you through the
+	process of setting up the CU CS VM on your machine.
+      </p>
+      
+      <p>
+	If you would like in-person help installing the VM, please
+	contact your instructor, TA,
+	or <a href="mailto:andrew.sayler@colorado.edu">CSFP
+	Personnel</a>.
+      </p>
+      
+      <p>
+	Before continuing, you should confirm that your system meets
+	the <a href="./vm-reqs.html">system requirements</a> before
+	proceeding. You should also
+	have <a href="./vm-obtain.html">obtained a copy</a> of the VM
+	image.
+      </p>
+
+
+      <h2>Install VirtualBox</h2>
+
+      <p>
+	To start, download and install VirtualBox on your
+	computer. The method for doing this varies depending on your
+	computer's operating system:
+      </p>
+
+      <p>
+	<em>
+	  <strong>Video:</strong>
+	  <a href="http://youtu.be/XyoYmQiCSog" target="_blank">
+	    Installing Oracle VirtualBox - Windows 7
+	  </a>
+	</em>
+      </p>
+      
+      <ul>
+	<li>
+	  If you are using Windows, download the
+	  "<a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox
+	  for Windows hosts</a>" installer, and run the resulting .exe
+	  file to install VirtualBox on your system.
+	</li>
+	<li>
+	  If you are using OSX, download the
+	  "<a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox
+	  for OS X hosts</a>" installer, and run the resulting .dmg
+	  file to install VirtualBox on your system.
+	</li>
+	<li>
+	  If you are using Linux, you can likely obtain VirtualBox via
+	  your system package manager. See
+	  "<a href="https://www.virtualbox.org/wiki/Linux_Downloads">VirtualBox
+	  for Linux hosts</a>" for more information.
+	</li>
+      </ul>
+
+      <h2>Import the VM Image</h2>
+
+      <p>
+	Once VirtualBox has been installed, and you have downloaded
+	the .ova VM image file, you are ready to load the VM image
+	onto your machine.
+      </p>
+
+      <p>
+	<em>
+	  <strong>Video:</strong>
+	  <a href="http://youtu.be/U7d6SfdrxUc" target="_blank">
+	    Importing the CU CS VM Image into Oracle VirtualBox
+	  </a>
+	</em>
+      </p>
+
+      <ol>
+	<li>
+	  Start by running VirtualBox
+	</li>
+	<li>
+	  Once VirutalBox has started, select "File&gt;Import
+	  Appliance" from the main menu. This will launch the
+	  "Appliance Import Wizard"
+	</li>
+	<li>
+	  Click the "Choose..." button on the first page of the wizard
+	  and select the .ova VM image file you downloaded
+	  previously. Click "Next" to advance to the second page of
+	  the import wizard.
+	</li>
+	<li>
+	  The second page of the wizard will display the default
+	  VM settings. You may leave these settings as they are (if in
+	  doubt, do this), or you may adjust them to better suite your
+	  machine. If you wish to adjust them, pay particular
+	  attention to the CPU and RAM settings. Generally, these
+	  should be set to either half of your system total, or 2
+	  CPUs (cores) and 2048 MB RAM, whichever is lower. When
+	  complete, click "Import" to complete the Wizard.
+	</li>
+	<li>
+	  You will now be presented with a progress bar that reads
+	  "Importing Appliance..." It may take 5 to 10 minutes for the
+	  import to complete.
+	</li>
+      </ol>
+
+      <h2>Run the VM</h2>
+
+      <p>
+	  Once the import has completed, you are ready to run the
+	  VM. You will repeat this process each time you wish to use
+	  the
+	  VM.
+      </p>
+
+      <p>
+	<em>
+	  <strong>Video:</strong>
+	  <a href="http://youtu.be/tz35MA2WpD0" target="_blank">
+	    Booting and Using the CU CS Virtual Machine
+	  </a>
+	  </em>
+      </p>
+
+      <ol>
+	<li>
+	  Select the VM in the main VirtualBox window, and click the
+	  green "Start" arrow near the top of the screen. This will
+	  launch the VM in a new window.
+	</li>
+	<li>
+	  The VM will boot much like a regular computer
+	  does. Depending on your system, you may be presented with
+	  several VirutalBox dialog boxes during the boot
+	  process. These are generally informational and may be
+	  dismissed once read. (You may wish to check the "Do not show
+	  again" option to avoid dealing with these dialogs each time
+	  your boot the VM.)
+	</li>
+	<li>
+	  Once booted, you should be presented with the Ubuntu 12.04
+	  desktop inside the VM window. The desktop should
+	  automatically re-size itself to fit the VM window. If it
+	  does not, you may wish to try clicking and dragging the
+	  corner of the VM window to change its size. Often, you
+	  must re-size the VM window once or twice to before the
+	  desktop auto-resizing will begin to work.
+	</li>
+	<li>
+	  The first time you boot the VM, you will be presented with
+	  the "Dropbox Setup" wizard on the Ubuntu desktop. Dropbox is
+	  an easy way to get files on and off your VM, as well as to
+	  provide you with a cloud-based backup of your files. If you
+	  wish to use Dropbox, follow the wizard to complete the setup
+	  process. <strong>Using Dropbox is strongly encouraged to
+	  ensure you always have a cloud-based backup of your VM
+	  work.</strong>
+	</li>
+	<li>
+	  At this point, your VM is ready to use. The most commonly
+	  needed programs are all available via shortcuts on the
+	  left-hand sidebar. Play around a bit to familiarize yourself
+	  with Ubuntu.
+	</li>
+	<li>
+	  When you are done using your VM, shut it down in the same
+	  manor you would a physical machine. In Ubuntu, this involves
+	  clicking the small "gear" icon in the upper right corner of
+	  the screen. Once the VM shutdown, the VM window will
+	  automatically close.
+	</li>
+      </ol>
+      
+      <p>
+	Additional VM tips and tricks, as well as default VM
+	credentials, can be found on
+	the <a href="./vm-tips.html">Getting
+	the Most Out of Your VM</a> page.
+      </p>
+
+      <p>
+	Addition information on VirtualBox can be found in
+	the <a href="https://www.virtualbox.org/manual/UserManual.html">VirtualBox
+	User Manual</a>.
+      </p>
+      
+      <p>
+	Additional information on Ubuntu can be found on
+	the <a href="https://help.ubuntu.com/12.04/ubuntu-help/index.html">Ubuntu
+	website</a>.
+      </p>
+
+      <p>
+	Next: <a href="./vm-tips.html">Getting the Most Out of Your
+	VM</a><br /> Previous: <a href="./vm-obtain.html">Obtaining
+	the VM</a>
+      </p>
+
+    </section>
+
+
+  </body>
+</html>

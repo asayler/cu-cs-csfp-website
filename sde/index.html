@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8"/>
-    <title>CU CS VM</title>
+    <title>CU CS SDE</title>
     <link rel="stylesheet" type="text/css" href="/style/main.css">
   </head>
 
@@ -13,179 +13,40 @@
 
     <section id="pagecontent">
 
-      <h1>CU CS Virtual Machine</h1>
+      <h1>CU CS Standard Development Environment</h1>
       
       <p>
-	This website hosts information and files related to the
-	University of Colorado Department of Computer Science Virtual
-	Machine. The CU CS VM is part of the <a href="/">CU CS
-	Foundation Program</a>. A Virtual Machine is a simulated
-	"computer" that runs as a program on your real computer. We
-	use the VM to provide students with a uniform,
-	officially-supported, Linux-based development environment.
+	As part of the <a href="/">CU CS Foundation Program</a>, the
+	department develops and supports the use of a standard
+	development environment (SDE) for all CS courses. The goal of
+	this environment is to provide all CS students with the tools
+	they need to complete their CS courses and to prepare students
+	for CS development work in the real world.
+      </p>
+
+      <p>
+	The standard development environment is provided in several
+	flavors. Students are encouraged to use whichever flavor they
+	feel best fits their preferences and requirements.
+      </p>
+
+      <h2>CU CS Virtual Machine</h2>
+
+      <p>
+	The simplest method for getting up and running with the SDE
+	is to use the CU CS Virtual Machines. A Virtual Machine is a
+	simulated "computer" that runs as a program on your real
+	computer. The CU CS VM comes pre-installed with a copy of the
+	SDE and is ready to use out of the box.
       </p>
       
-      <h2>System Requirements</h2>
-      
-      <p>
-	To run the VM effectively on your own machine, your computer
-	should meet the following requirements:
-      </p>
-      
-      <ul>
-	<li>4GB of RAM or more</li>
-	<li>Intel Core2 Due or newer processor with
-	  <a href="http://ark.intel.com/Products/VirtualizationTechnology"
-	     target="_blank">virtualization</a> and
-	     <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/microarchitecture/intel-64-architecture-general.html"
-	     target="_blank">64-bit</a> support<br />
-	  <em>(Intel Core i3 or newer recommended; Intel Atom
-	    processors NOT recommended)</em></li>
-	<li>Processor virtualization support enabled at the BIOS/UEFI
-	  level <br />
-	  <em>(Process varies by model,
-	    See <a href="http://youtu.be/dvJZFbxXkaY"
-		   target="_blank">this video</a> for an example)</em></li>
-	<li>2 or more physical processor cores</li>
-	<li>30GB or more of free HD space</li>
-	<li>A 64-bit OS (Windows 7 or newer, OSX 10.7 or newer, etc)</li>
-      </ul>
-      
-      <h2>Downloading the VM</h2>
-      
-      <p>
-	The recommended VM download method is via the BitTorrent
-	peer-to-peer distribution system. For those that can not use
-	BitTorrent, we also provide a direct download method. Note,
-	however, that the direct download method is slower and more
-	prone to corruption than the BitTorrent method.
-      </p>
-      
-      <p>
-	Each download also includes a link for the md5 hash file
-	associated with the VM image. You can (optionally) use these
-	hash files with the Unix 'md5sum' utility to verify that your
-	download is not corrupt. See
-	<a href="http://tombuntu.com/index.php/2007/12/21/how-to-use-md5sum-to-verify-data-integrity/">
-	  this link
-	</a>
-	for more information.
-      </p>
-
-      <h3>Download via BitTorrent</h3>
-
-      <p>
-	Downloading the VM via BitTorrent involves downloading a
-	'.torrent' file that you can then open with a BitTorrent
-	client to download the actual VM file. Using BitTorrent will
-	help ensure you the fastest download, will ensure your
-	download is not corrupted, and will allow you to easily start,
-	stop, a resume your download should you need to. If you do not
-	already have a BitTorrent client installed, please install one
-	from the list below:
-      </p>
-
-      <ul>
-	<li>
-	  <a href="http://www.transmissionbt.com/">Transmission</a>
-	  (Linux + OSX, <a href="http://en.wikipedia.org/wiki/Free_software">Free</a>)
-	</li>
-	<li>
-	  <a href="http://www.frostwire.com/">FrostWire</a>
-	  (Linux + OSX + Windows, <a href="http://en.wikipedia.org/wiki/Free_software">Free</a>)
-	</li>
-	<li>
-	  <a href="http://www.qbittorrent.org/download.php">qTorrent</a>
-	  (Linux + OSX + Windows, <a href="http://en.wikipedia.org/wiki/Free_software">Free</a>)
-	</li>
-      </ul>
-
-      <p>
-	Once you have installed a BitTorrent client, you may download
-	the one of the .torrent files for the VM below. Open the
-	.torrent file in your BitTorrent client to begin your VM
-	download.
-      </p>
-
-      <p>
-	<em>VM .torrent files (choose one):</em>
-      </p>
-      <ul>
-	<li>
-	  <a href="http://foundation.cs.colorado.edu/files/CU-CS-VM-Summer13-x64-v1.1.ova.torrent">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.torrent
-	  </a>
-	  (Primary Mirror)
-	</li>
-	<li>
-	  <a href="http://www.andysayler.com/files/CU-CS-VM-Summer13-x64-v1.1.ova.torrent">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.torrent
-	  </a>
-	  (Backup Mirror)
-	</li>
-      </ul>
-
-      <p>
-	<em>VM md5 verification .torrent files (optional, choose one):</em>
-      </p>
-      <ul>
-	<li>
-	  <a href="http://foundation.cs.colorado.edu/files/CU-CS-VM-Summer13-x64-v1.1.ova.md5.torrent">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.md5.torrent
-	  </a>
-	  (Primary Mirror)
-	</li>
-	<li>
-	  <a href="http://www.andysayler.com/files/CU-CS-VM-Summer13-x64-v1.1.ova.md5.torrent">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.md5.torrent
-	  </a>
-	  (Backup Mirror)
-	</li>
-      </ul>
-
-      <h3>Direct Download</h3>
-
-      <p>
-	If you can not use BitTorrent to download the VM, you may instead
-	use one of the direct download links below. Please use BitTorrent if
-	possible as it will ensure a faster, more reliable download.
-      </p>
-
-      <p>
-	<em>VM files (choose one):</em>
-      </p>
-      <ul>
-	<li>
-	  <a href="http://foundation.cs.colorado.edu/files/CU-CS-VM-Summer13-x64-v1.1.ova">
-	    CU-CS-VM-Summer13-x64-v1.1.ova
-	  </a>
-	  (Primary Mirror)
-	</li>
-	<li>
-	  <a href="http://www.andysayler.com/files/CU-CS-VM-Summer13-x64-v1.1.ova">
-	    CU-CS-VM-Summer13-x64-v1.1.ova
-	  </a>
-	  (Backup Mirror)
-	</li>
-      </ul>
-      
-      <p>
-	<em>VM md5 verification files (optional, choose one):</em>
-      </p>
-      <ul>
-	<li>
-	  <a href="http://foundation.cs.colorado.edu/files/CU-CS-VM-Summer13-x64-v1.1.ova.md5">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.md5
-	  </a>
-	  (Primary Mirror)
-	</li>
-	<li>
-	  <a href="http://www.andysayler.com/files/CU-CS-VM-Summer13-x64-v1.1.ova.md5">
-	    CU-CS-VM-Summer13-x64-v1.1.ova.md5
-	  </a>
-	  (Backup Mirror)
-	</li>
-      </ul>
+      <ol>
+	<li><a href="./vm-reqs.html">VM System Requirements</a></li>
+	<li><a href="./vm-obtain.html">Obtaining the VM Image</a></li>
+	<li><a href="./vm-install.html">Installing the VM</a></li>
+	<li><a href="./vm-tips.html">Getting the Most Out of Your
+	VM</a></li>
+      </ol>
       
       <h2>Contact</h2>
       
