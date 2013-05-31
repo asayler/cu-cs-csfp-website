@@ -27,8 +27,9 @@
 	If you are using a computer on which the processor
 	virtualization extensions (VT-x/AMD-V) have been disabled by
 	default (or if you have manually disabled them), you will
-	receive the following error message when booting any 64-bit
-	VM:
+	receive the <a href="./img/VirtualBox_VT-x_Error.png"
+	target="_blank">following error message</a> when booting any
+	64-bit VM:
       </p>
 
       <p>
@@ -45,13 +46,6 @@
 	</em>
       </p>
       
-      <p class="center">
-	<img src="VirtualBox_VT-x_Error.png"
-	     alt="VirtualBox '64-bit VT-x/AMD-V Not Operational' Error"
-	     width="500px"
-	     />
-      </p>
-
       <p>
 	The solution to this problem is to reboot your host computer,
 	enter the BIOS/System setup screen before your host OS starts,
@@ -59,6 +53,43 @@
 	to do this differs by computer model, but the general process
 	for a PC is listed below. In general, Mac/OSX user will not
 	encounter this issue.
+      </p>
+
+      <ol>
+	<li>Reboot the host computer</li>
+	<li>
+	  As soon as the host computer begins to boot (before the
+	  host OS starts) look for a message on the screen telling which
+	  button to push to enter Setup (often it's F1, F2, Enter, Esc,
+	  or F8). Push this button quickly to launch the BIOS setup
+	  menu.
+	</li>
+	<li>
+	  Find the virtualization settings in the setup menus. Often
+	  they are located with the <a href="./img/BIOS_Security.jpg"
+	  target="_blank">"Security" settings</a>.
+	</li>
+	<li>
+	  Change all virtualization settings (especially the VT-x or
+	  "Virtualization" setting) from
+	  "<a href="./img/BIOS_Security_Virtualization_Disabled.jpg"
+	  target="_blank">Disabled</a>"
+	  <a href="./img/BIOS_Security_Virtualization_Enable.jpg"
+	  target="_blank">to</a>
+	  "<a href="./img/BIOS_Security_Virtualization_Enabled.jpg"
+	  target="_blank">Enabled</a>".
+	</li>
+	<li><a href="./img/BIOS_Save+Exit.jpg" target="_blank">Save
+	  your BIOS settings</a> and exit/reboot</li>
+      </ol>
+
+      <p>
+	If you can not enable virtualization, if you processor does not
+	support virtualization, or if you are using a 32-bit processor
+	or a 32-bit OS you may need to fall back to using the 32-bit
+	VM image. Please contact your instructor or
+	<a href="mailto:andrew.sayler@colorado.edu">CSFP personnel</a>
+	for more information.
       </p>
 
       <p>
