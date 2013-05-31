@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>CU VM Troubleshooting</title>
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+  </head>
+
+  <body>
+
+    <?php include_once($_SERVER['DOCUMENT_ROOT'].'/include/analyticstracking.html'); ?>
+
+    <section id="pagecontent">
+      
+      <h1>Troubleshooting the VM</h1>
+      
+      <p>
+	Having trouble with the VM? See the items below. You may also
+	wish to consult the <a href="./vm-tips.html"> VM Tips
+	page</a>.
+      </p>
+
+      <h3>VirtualBox 64-bit VT-x/AMD-V "Not Operational" Error</h3>
+
+      <p>
+	If you are using a computer on which the processor
+	virtualization extensions (VT-x/AMD-V) have been disabled by
+	default (or if you have manually disabled them), you will
+	receive the following error message when booting any 64-bit
+	VM:
+      </p>
+
+      <p>
+	<em>
+	  VT-x/AMD-V hardware acceleration has been enabled, but is
+	  not operational. Your 64-bit guest will fail to detect a
+	  64-bit CPU and will not be able to boot.
+	</em>
+      </p>
+      <p>
+	<em>
+	  Please ensure that you have enabled VT-x/AMD-V properly in
+	  the BIOS of your host computer.
+	</em>
+      </p>
+      
+      <p class="center">
+	<img src="VirtualBox_VT-x_Error.png"
+	     alt="VirtualBox '64-bit VT-x/AMD-V Not Operational' Error"
+	     width="500px"
+	     />
+      </p>
+
+      <p>
+	The solution to this problem is to reboot your host computer,
+	enter the BIOS/System setup screen before your host OS starts,
+	and enable processor virtualization support. The exact process
+	to do this differs by computer model, but the general process
+	for a PC is listed below. In general, Mac/OSX user will not
+	encounter this issue.
+      </p>
+
+      <p>
+	Previous: <a href="./vm-tips.html">Getting the Most Out of the VM</a>
+	<br />
+	Return to <a href="./">CU SDE Home</a>
+      </p>
+
+    </section>
+
+  </body>
+</html>
