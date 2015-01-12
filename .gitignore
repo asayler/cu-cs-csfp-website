@@ -1,2 +1,4 @@
 #Top Level .gitignore
 *~
+
+/vm/
